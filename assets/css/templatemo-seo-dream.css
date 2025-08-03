@@ -206,9 +206,13 @@ body {
 .section-heading h2 span {
   color: #088ec3;
 }
-
+.main-blue-button{
+  
+  display: none;
+}
 .main-blue-button a {
   display: inline-block;
+  
   background-color: #4771cb;
   font-size: 15px;
   font-weight: 400;
@@ -255,8 +259,8 @@ header
 */
 
 .background-header {
-  background-color: #33ccc5!important;
-  height: 80px!important;
+  background-color: #fff!important;
+  height: 100px!important;
   position: fixed!important;
   top: 0px;
   left: 0px;
@@ -266,16 +270,16 @@ header
 
 .background-header .logo,
 .background-header .main-nav .nav li a {
-  color: #fff;
+  color: black;
 }
 
 .background-header .main-nav .nav li:hover a {
-  color: #33ccc5;
+  color: #003366;
 }
 
 .background-header .nav li a.active {
   position: relative;
-  color: #fff;
+  color: #003366;
 }
 
 .background-header .nav li a.active:after {
@@ -290,7 +294,7 @@ header
 }
 
 .header-area {
-  background-color: #33ccc5;
+  background-color: #fff;
   position: absolute;
   top: 0px;
   left: 0px;
@@ -304,7 +308,7 @@ header
 }
 
 .header-area .main-nav {
-  min-height: 80px;
+  min-height: 100px;
   background: transparent;
 }
 
@@ -381,7 +385,7 @@ header
   display: block;
   font-weight: 500;
   font-size: 15px;
-  color: #fff;
+  color: black;
   text-transform: capitalize;
   -webkit-transition: all 0.3s ease 0s;
   -moz-transition: all 0.3s ease 0s;
@@ -391,16 +395,17 @@ header
   line-height: 40px;
   border: transparent;
   letter-spacing: 1px;
+  font-weight: 700;
 }
 
 .header-area .main-nav .nav li:hover a,
 .header-area .main-nav .nav li a.active {
-  color: #fff!important;
+  color: #003366!important;
 }
 
 .background-header .main-nav .nav li:hover a,
 .background-header .main-nav .nav li a.active {
-  color: #fff!important;
+  color: #003366!important;
   opacity: 1;
 }
 
@@ -934,7 +939,7 @@ Banner Style
 }
 
 .main-green-button a {
-  background-color: #28a745;
+  background-color: #003366;
   padding: 12px 30px;
   color: #fff;
   border-radius: 30px;
@@ -1554,7 +1559,7 @@ form#contact textarea::placeholder {
 
 form#contact button {
   display: inline-block;
-  background-color: #33ccc5;
+  background-color: #03a4ed;
   font-size: 15px;
   font-weight: 400;
   color: #fff;
@@ -1581,19 +1586,6 @@ Footer Style
 --------------------------------------------- 
 */
 
-footer p {
-  text-align: center;
-  margin: 30px 0px;
-}
-
-footer p a {
-  color: #33ccc5;
-  transition: all .5s;
-}
-
-footer p a:hover {
-  color: #4771cb;
-}
 
 /* 
 ---------------------------------------------

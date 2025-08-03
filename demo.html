@@ -1,171 +1,299 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <title>Our Services</title>
-  <link rel="stylesheet" href="services.css">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/wow/1.1.2/wow.min.js"></script>
-  <style>
-    .our-services {
-  padding-top: 120px;
-}
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Creovate Technologies Footer</title>
+    <!-- Font Awesome for Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <style>
+        
 
-.section-heading {
-  text-align: center;
-  margin: 0 auto 60px auto;
-  max-width: 600px;
-}
+        /* Footer Container */
+        .footer-section {
+            background: linear-gradient(90deg, #4776E6 0%, #8E54E9 100%);
+            color: #fff;
+            padding: 5rem 0; /* py-5 */
+        }
 
-.our-services .container-fluid {
-  padding: 0px 80px;
-}
+        /* Inner Content Wrapper */
+        .footer-container {
+            max-width: 1320px;
+            margin-left: auto;
+            margin-right: auto;
+            padding-left: 1rem;
+            padding-right: 1rem;
+        }
 
-.service-item {
-  background: #fff;
-  padding: 40px 25px;
-  border-radius: 12px;
-  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.05);
-  transition: all 0.4s ease-in-out;
-  transform: translateY(0);
-  position: relative;
-  overflow: hidden;
-}
+        /* Grid Layout for Columns */
+        .footer-row {
+            display: grid;
+            grid-template-columns: 1fr;
+            gap: 3rem;
+        }
+        @media (min-width: 768px) {
+            .footer-row {
+                grid-template-columns: repeat(2, 1fr);
+            }
+        }
+        @media (min-width: 992px) {
+            .footer-row {
+                grid-template-columns: repeat(4, 1fr);
+            }
+        }
 
-.service-item:hover {
-  transform: translateY(-10px) scale(1.02);
-  box-shadow: 0 20px 30px rgba(0, 0, 0, 0.1);
-  background: linear-gradient(135deg, #ffffff, #f9f9f9);
-}
+        /* Individual Column styles */
+        .footer-col {
+            text-align: center;
+        }
+        @media (min-width: 768px) {
+            .footer-col {
+                text-align: left;
+            }
+        }
 
-.service-item .icon {
-  width: 80px;
-  height: 80px;
-  margin: 0 auto 20px auto;
-  background-color: #f7f7f7;
-  border-radius: 50%;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  transition: background-color 0.3s ease;
-}
+        /* Logo and About Section */
+        .footer-logo-col img {
+            width: 150px;
+            height: auto;
+            margin-bottom: 1rem;
+            transition: transform 0.3s ease;
+        }
 
-.service-item:hover .icon {
-  background-color: #eaeaea;
-}
+        .footer-logo-col img:hover {
+            transform: scale(1.05);
+        }
+        
+        .footer-about-text {
+            font-size: 0.875rem; /* small */
+            color: rgba(255, 255, 255, 0.75);
+            margin-bottom: 1.5rem;
+        }
 
-.service-item .icon img {
-  width: 38px;
-  height: 38px;
-}
+        /* Social Icons */
+        .social-icons-wrapper {
+            display: flex;
+            gap: 0.75rem;
+            justify-content: center;
+        }
+        @media (min-width: 768px) {
+            .social-icons-wrapper {
+                justify-content: flex-start;
+            }
+        }
 
-.service-item h4 {
-  font-size: 20px;
-  font-weight: 700;
-  color: #2a2a2a;
-  margin-bottom: 15px;
-}
+        .social-icons-wrapper a {
+            color: #fff;
+            font-size: 1.25rem;
+            transition: transform 0.3s ease-in-out;
+        }
+        .social-icons-wrapper a:hover {
+            transform: scale(1.2);
+        }
 
-.service-item p {
-  font-size: 14px;
-  color: #555;
-  margin: 0;
-  line-height: 1.6;
-}
-body {
-  margin: 0;
-  padding: 0;
-  font-family: 'Segoe UI', sans-serif;
-  background: #f8f9fa;
-}
+        /* List Sections (Services, Quick Links, Get in Touch) */
+        .footer-list-title {
+            font-size: 1.125rem;
+            font-weight: 600;
+            margin-bottom: 1.5rem;
+        }
+        
+        .footer-list {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+            display: flex;
+            flex-direction: column;
+            gap: 0.75rem;
+        }
 
-  </style>
+        .footer-list a {
+            color: rgba(255, 255, 255, 0.75);
+            font-size: 0.875rem;
+            text-decoration: none;
+            display: inline-flex;
+            align-items: center;
+            transition: color 0.3s ease, transform 0.3s ease;
+        }
+
+        .footer-list a:hover {
+            color: #93c5fd;
+            transform: translateX(5px);
+        }
+
+        /* Contact Info specific styles */
+        .contact-info-list {
+            display: flex;
+            flex-direction: column;
+            gap: 0.75rem;
+            text-align: center;
+        }
+        @media (min-width: 768px) {
+            .contact-info-list {
+                text-align: left;
+            }
+        }
+        
+        .contact-info-list a {
+            color: rgba(255, 255, 255, 0.75);
+            text-decoration: none;
+            transition: color 0.3s ease;
+        }
+        .contact-info-list a:hover {
+            color: #93c5fd;
+        }
+
+        .contact-info-item {
+            font-size: 0.875rem;
+            color: rgba(255, 255, 255, 0.75);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        @media (min-width: 768px) {
+             .contact-info-item {
+                justify-content: flex-start;
+             }
+        }
+
+        .contact-info-item i {
+            margin-right: 0.75rem;
+            font-size: 1.125rem;
+        }
+
+        /* Footer Bottom Section */
+        .footer-divider {
+            height: 1px;
+            background-color: rgba(255, 255, 255, 0.25);
+            margin: 3rem 0 1.5rem;
+        }
+
+        .footer-copyright {
+            text-align: center;
+            font-size: 0.8125rem;
+            color: rgba(255, 255, 255, 0.5);
+        }
+
+        .footer-copyright strong {
+            font-weight: 700;
+        }
+
+        /* Animation for fade-up on scroll */
+        .footer-fade-in {
+            opacity: 0;
+            transform: translateY(20px);
+            transition: opacity 0.8s ease-out, transform 0.8s ease-out;
+        }
+
+        .footer-fade-in.is-visible {
+            opacity: 1;
+            transform: translateY(0);
+        }
+    </style>
 </head>
 <body>
 
-  <div id="services" class="our-services section">
-    <div class="container">
-      <div class="row">
-        <div class="col-lg-6 offset-lg-3">
-          <div class="section-heading wow bounceIn" data-wow-duration="1s" data-wow-delay="0.2s">
-            <h6>Our Services</h6>
-          </div>
+<footer class="footer-section">
+    <div class="footer-container footer-fade-in">
+        <div class="footer-row">
+
+            <!-- Logo and About Section -->
+            <div class="footer-col footer-logo-col">
+                <img src="https://placehold.co/150x100/ffffff/000000?text=Creovate+Logo" 
+                     alt="Creovate Logo" 
+                     onerror="this.onerror=null;this.src='https://placehold.co/150x100/CCCCCC/333333?text=Logo+Not+Found';">
+                <p class="footer-about-text">
+                    We craft modern, responsive, and scalable web solutions to bring your business online and ahead of the curve.
+                </p>
+                <div class="social-icons-wrapper">
+                    <a href="#"><i class="fab fa-twitter"></i></a>
+                    <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                    <a href="#"><i class="fab fa-facebook-f"></i></a>
+                    <a href="#"><i class="fab fa-instagram"></i></a>
+                </div>
+            </div>
+
+            <!-- Services Section -->
+            <div class="footer-col">
+                <h5 class="footer-list-title">Our Services</h5>
+                <ul class="footer-list">
+                    <li>
+                        <a href="#"><i class="fas fa-arrow-right-long footer-list-icon"></i> Web App Development</a>
+                    </li>
+                    <li>
+                        <a href="#"><i class="fas fa-arrow-right-long footer-list-icon"></i> Custom Website Design</a>
+                    </li>
+                    <li>
+                        <a href="#"><i class="fas fa-arrow-right-long footer-list-icon"></i> E-commerce Solutions</a>
+                    </li>
+                    <li>
+                        <a href="#"><i class="fas fa-arrow-right-long footer-list-icon"></i> UI/UX Design</a>
+                    </li>
+                    <li>
+                        <a href="#"><i class="fas fa-arrow-right-long footer-list-icon"></i> SEO & Digital Marketing</a>
+                    </li>
+                </ul>
+            </div>
+
+            <!-- Quick Links Section -->
+            <div class="footer-col">
+                <h5 class="footer-list-title">Quick Links</h5>
+                <ul class="footer-list">
+                    <li><a href="#services"><i class="fas fa-arrow-right-long footer-list-icon"></i> Services</a></li>
+                    <li><a href="#portfolio"><i class="fas fa-arrow-right-long footer-list-icon"></i> Portfolio</a></li>
+                    <li><a href="#about"><i class="fas fa-arrow-right-long footer-list-icon"></i> About Us</a></li>
+                    <li><a href="#contact"><i class="fas fa-arrow-right-long footer-list-icon"></i> Contact</a></li>
+                </ul>
+            </div>
+
+            <!-- Get in Touch Section -->
+            <div class="footer-col">
+                <h5 class="footer-list-title">Get in Touch</h5>
+                <div class="contact-info-list">
+                    <p class="contact-info-item">
+                        <i class="fas fa-map-marker-alt"></i>
+                        <span>Esplanade Mall, Rasulgarh,<br>Bhubaneswar, Odisha - 751010</span>
+                    </p>
+                    <p class="contact-info-item">
+                        <i class="fas fa-envelope"></i>
+                        <a href="mailto:creovatetechnologies@gmail.com">creovatetechnologies@gmail.com</a>
+                    </p>
+                    <p class="contact-info-item">
+                        <i class="fas fa-globe"></i>
+                        <a href="https://www.creovate.in" target="_blank">www.creovate.in</a>
+                    </p>
+                </div>
+            </div>
+
         </div>
-      </div>
+
+        <!-- Footer Bottom -->
+        <hr class="footer-divider">
+        <div class="footer-copyright">
+            &copy; 2025 <strong>Creovate Technologies</strong>. All rights reserved.
+        </div>
     </div>
+</footer>
 
-    <div class="container-fluid">
-      <div class="row">
+<script>
+    // Intersection Observer for the footer fade-up animation
+    const footerSection = document.querySelector('.footer-fade-in');
 
-        <!-- Service Card -->
-        <div class="col-lg-4 mb-4 d-flex align-items-stretch">
-          <div class="service-item text-center wow bounceInUp" data-wow-duration="1s" data-wow-delay="0.3s">
-            <div class="icon">
-              <img src="assets/images/service-icon-01.png" alt="Web Development Icon">
-            </div>
-            <h4>Website & Webapp Development</h4>
-            <p>At Creovate, we offer top-notch web development services that cater to the unique needs of businesses of all sizes. Our team of skilled developers builds fast, secure, and user-friendly websites to drive results.</p>
-          </div>
-        </div>
+    const observer = new IntersectionObserver(entries => {
+        entries.forEach(entry => {
+            if (entry.isIntersecting) {
+                entry.target.classList.add('is-visible');
+                observer.unobserve(entry.target);
+            }
+        });
+    }, {
+        threshold: 0.2 // Trigger when 20% of the footer is visible
+    });
 
-        <!-- Repeat for each service -->
-        <div class="col-lg-4 mb-4 d-flex align-items-stretch">
-          <div class="service-item text-center wow bounceInUp" data-wow-duration="1s" data-wow-delay="0.4s">
-            <div class="icon">
-              <img src="assets/images/service-icon-01.png" alt="CRM Icon">
-            </div>
-            <h4>CRM Software</h4>
-            <p>Enhance your customer relationships with our robust CRM software solutions. We offer tailored CRM development and integration services to boost your sales and customer support.</p>
-          </div>
-        </div>
-
-        <div class="col-lg-4 mb-4 d-flex align-items-stretch">
-          <div class="service-item text-center wow bounceInUp" data-wow-duration="1s" data-wow-delay="0.5s">
-            <div class="icon">
-              <img src="assets/images/service-icon-03.png" alt="SEO Icon">
-            </div>
-            <h4>Search Engine Optimization</h4>
-            <p>Experienced SEO specialists focused on boosting online visibility and driving organic traffic. Using advanced strategies and keyword research, we help optimize your website for top rankings.</p>
-          </div>
-        </div>
-
-        <div class="col-lg-4 mb-4 d-flex align-items-stretch">
-          <div class="service-item text-center wow bounceInUp" data-wow-duration="1s" data-wow-delay="0.6s">
-            <div class="icon">
-              <img src="assets/images/service-icon-03.png" alt="E-commerce Icon">
-            </div>
-            <h4>E-Commerce Solutions</h4>
-            <p>Launch your online store with our secure and scalable e-commerce development services. We offer payment gateway integration, mobile-friendly UI, SEO-ready listings, and more.</p>
-          </div>
-        </div>
-
-        <div class="col-lg-4 mb-4 d-flex align-items-stretch">
-          <div class="service-item text-center wow bounceInUp" data-wow-duration="1s" data-wow-delay="0.7s">
-            <div class="icon">
-              <img src="assets/images/service-icon-01.png" alt="Digital Marketing Icon">
-            </div>
-            <h4>Digital Marketing</h4>
-            <p>We provide digital marketing services including social media marketing, Google Ads, email campaigns, and more to grow your brand and drive real business results.</p>
-          </div>
-        </div>
-
-        <div class="col-lg-4 mb-4 d-flex align-items-stretch">
-          <div class="service-item text-center wow bounceInUp" data-wow-duration="1s" data-wow-delay="0.8s">
-            <div class="icon">
-              <img src="assets/images/service-icon-02.png" alt="UI UX Icon">
-            </div>
-            <h4>UI & UX Design</h4>
-            <p>Deliver intuitive user experiences with our UI/UX services. We design human-centered, functional interfaces that are visually impressive and easy to navigate.</p>
-          </div>
-        </div>
-
-      </div>
-    </div>
-  </div>
-
-  <script>
-    new WOW().init();
-  </script>
+    if (footerSection) {
+        observer.observe(footerSection);
+    }
+</script>
 
 </body>
 </html>
